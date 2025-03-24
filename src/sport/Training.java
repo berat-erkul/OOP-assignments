@@ -1,6 +1,7 @@
+package sport;
 
-public class Training{
-    //title, scheduledDate, trainerName and cancelled;
+public class Training {
+
     private String title;
     private ScheduledDate scheduledDate;
     private String trainerName;
@@ -40,5 +41,10 @@ public class Training{
 
     public void setCancelled(boolean cancelled) {
         this.cancelled = cancelled;
+    }
+
+    @Override
+    public String toString() {
+        return "Training:" + title + "," + scheduledDate.toString() + "," + trainerName + "," + cancelled;
     }
 }
